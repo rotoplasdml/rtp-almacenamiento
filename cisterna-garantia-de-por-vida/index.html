@@ -1,0 +1,618 @@
+<html>
+
+<head>
+
+    
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="Rotoplas, Agua, Servicio, Almacenamiento"><!-- Keywords-->
+    <meta name="author" content="Rotoplas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="icon" href="../imgs/favicon.png">
+    <link rel="icon" href="../imgs/favicon.png" sizes="32x32" />
+    <link rel="icon" href="../imgs/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="../imgs/favicon.png" />
+    
+
+
+
+    
+<meta property="og:title" content="" /> <!-- OpenGraph-->
+<meta property="og:type" content="services" />
+<meta property="og:url" content="" /><!-- OpenGraph-->
+<meta property="og:image" content="cover.jpg" />
+    
+    
+    
+    <script src="https://apis.google.com/js/api.js"></script>
+
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/simple-css-grid@1.7.0/css/simple-grid.min.css">
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <title>Rotoplas Cisterna Garantía de por vida</title>
+
+
+    
+    
+  
+    <script>
+
+
+        
+
+        
+        window.addEventListener('scroll', function() {
+            var div = document.getElementById('fixedcta');
+
+            var element = document.getElementById('third'); 
+            var elementHeight = element.offsetHeight;
+            
+            var elementOffsetTop = element.offsetTop;
+            var elementMax = elementOffsetTop + elementHeight;
+
+            var scrollPosition = window.scrollY;
+           
+            if (scrollPosition > 500 && scrollPosition < elementOffsetTop || scrollPosition > elementMax) { 
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+
+            
+        });
+        
+
+
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+        
+
+
+
+
+            var btnScroll = document.getElementById('fixedcta');
+            btnScroll.addEventListener('click', scrollToSection);
+            var btnScroll2 = document.getElementById('btnscroll1');
+            btnScroll2.addEventListener('click', scrollToSection);
+            var btnScroll3 = document.getElementById('btnscroll2');
+            btnScroll3.addEventListener('click', scrollToSection);
+            var btnScroll4 = document.getElementById('btnscroll3');
+            btnScroll4.addEventListener('click', scrollToSection);
+
+            function scrollToSection() {
+            var section = document.getElementById('formlead'); // Identificador de la sección a la que deseas desplazarte
+            section.scrollIntoView({ behavior: 'smooth' });
+            }
+
+
+
+
+
+
+
+
+
+
+        });
+
+        
+
+
+        $(document).ready(function() {
+ 
+
+  $('#closeicon').click(function(){
+    $('#thankyou').slideUp();
+    $(this).hide();
+  });
+
+
+
+  $(".questionbox").click(function() {
+    $(this).next(".answarebox").toggleClass("showansware");
+  });
+
+});
+
+
+
+
+
+
+    
+    </script>
+
+    
+
+    
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="../imgs/recursos-generales/logo-rotoplas.svg" class="logo">
+                </div>
+                <div class="col-sm-8 center pad30">
+                    <a class="nodecoration darkblue menuitem" target="_blank" href=""><img src="../imgs/recursos-generales/productos-menu-icon.svg"/> Productos</a>
+
+                    <!--
+                    <a class="nodecoration darkblue menuitem" target="_blank" href=""><img src="../imgs/recursos-generales/pin-menu-icon.svg"/> Dónde comprar</a>
+                    -->
+                    
+                    <a class="nodecoration darkblue menuitem" target="_blank" href="https://rotoplas.com.mx/contacto/"><img src="../imgs/recursos-generales/mail-icon-footer.svg"/> Contacto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const datacity = "https://api.bigdatacloud.net/data/reverse-geocode-client";
+
+console.log(datacity);
+
+fetch(datacity)
+.then(response => response.json())
+.then(data => {
+  const state = data.principalSubdivisionCode;
+  console.log(state);
+
+  const statelist = [
+    "MX-NLE",
+    "MX-COA",
+    "MX-TAM",
+    "MX-SIN",
+    "MX-SON",
+    "MX-BCN",
+    "MX-GUA",
+    "MX-MIC",
+    "MX-QRO",
+    "MX-SLP",
+    "MX-VER"
+    //"MX-AGU"
+  ];
+
+
+  const statelist2 = [
+    "MX-HID",
+    "MX-TLAX"
+    //"MX-AGU"
+  ];
+
+  let found = false;
+  for (let i = 0; i < statelist.length; i++) {
+    const stateselected = statelist[i].toLowerCase();
+    if (stateselected === state.toLowerCase()) {
+      found = true;
+      break;
+    }
+  }
+
+  let found2 = false;
+  for (let i = 0; i < statelist2.length; i++) {
+    const stateselected2 = statelist2[i].toLowerCase();
+    if (stateselected2 === state.toLowerCase()) {
+      found2 = true;
+      break;
+    }
+  }
+
+  if (found) {
+    console.log("La cadena coincide con tinacoplus.");
+    document.getElementById("tp").style.display = "inline-block";
+    document.getElementById("gdpv").style.display = "none";
+    //document.getElementById("*").style.display = "none";
+  }
+  else if (found2) {
+    console.log("La cadena coincide con tinaco económico.");
+    document.getElementById("tp").style.display = "none";
+    document.getElementById("gdpv").style.display = "none";
+   // document.getElementById("*").style.display = "inline-block";
+  }
+  else {
+    console.log("La cadena coincide con garantía de por vida.");
+    document.getElementById("tp").style.display = "none";
+    document.getElementById("gdpv").style.display = "inline-block";
+  //  document.getElementById("*").style.display = "none";
+  }
+})
+.catch(error => {
+  console.log("Error al obtener los datos de ubicación: " + error);
+});
+
+
+            
+      </script>
+
+
+
+
+  
+
+    <div id="slider" class="sliderlanding">
+
+        <div id="slider1" class="slidercontainerlanding active animate__animated animate__fadeIn" style="background-image:url(../imgs/recursos-generales/gota-fondo.jpg);">
+                            
+
+            <div class="row">
+                <div class="col-sm-6 center bold fs30">
+                    <img class="productheader" src="../imgs/cisterna-gdpv/cisterna-header.png"/>
+                </div>
+
+                <div class="col-sm-6 left bold fs30" id="breakelementblock">
+
+                    Cisternas Garantía de por vida
+                    <p class="fs16 left light pad20 pmax500 gray margin0">
+                        Las Cisternas Rotoplas cuentan con garantía de por vida y están equipada con Filtro Hydro-Net®, el cual retiene tierra y sedimentos, evitando que se tapen las tuberías y brindando agua limpia transparente y de la mejor calidad.
+                        <br> <br>
+                        Máxima calidad de por vida <br>
+                        Equipados con los mejores accesorios
+
+                    </p>
+                    <br>
+                <!-- <a class="nodecoration fs20 light ctadarkblue" href="">Encuentra a un distribuidor <img class="buttonarrow" src="../imgs/recursos-generales/flecha-icon.svg"></a>-->   
+                </div>
+               
+            </div>
+
+        </div>
+
+
+       
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="beneficiosbg" style="background-image:url(../imgs/cisterna-gdpv/cisternas-beneficios.png)">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 left bold fs30 pad40" >
+                    Beneficios
+                    <br><br>
+                    <p class="fs16 left light pmax600 gray margin0">
+                        · La línea de Cisternas puede instalarse al exterior, gracias a su exclusiva capa UV, la cual impide el paso de los rayos del sol.<br>
+                        · Garantía de por vida, sin fisuras ni filtraciones.<br>
+                        · Amplia entrada con tapa de 60 cm que permite un acceso más fácil al interior facilitando su lavado y mantenimiento.<br>
+                        · Su innovadora tecnología Expel® inhibe la reproducción de bacterias.<br>
+                        · El Filtro Hydro-Net® retiene sedimentos y asegura la calidad del agua.<br>
+                        · Todos los Accesorios incluidos están garantizados por 5 años*.
+
+
+                    </p>
+                </div>
+                <div class="col-sm-5 center bold fs30" >
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            
+
+            <div class="col-sm-12 center bold pad20 fs30" >
+
+                Gran variedad de capacidades  para que siempre encuentres una 
+                <br>¡hecha especialmente a tu medida!
+                
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            
+
+            <div class="col-sm-12 center bold pad20 fs20" >
+
+                <div class="productcards" style="width:12%;">
+                    <img class="productcardimage" src="../imgs/cisterna-gdpv/cisterna-1200-litros.png"/>
+                    <br><br>
+                    1,200 Litros
+                    <br><br>
+                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg"> <span style="vertical-align:top;">5</span>
+                   
+                </div>
+
+
+                <div class="productcards" style="width:14%;">
+                    <img class="productcardimage" src="../imgs/cisterna-gdpv/cisterna-2800-litros.png"/>
+                    <br><br>
+                    2,800 Litros
+                    <br><br>
+                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg"> <span style="vertical-align:top;">10</span>
+                    
+                </div>
+
+
+                <div class="productcards" style="width:21%;">
+                    <img class="productcardimage" src="../imgs/cisterna-gdpv/cisterna-5000-litros.png"/>
+                    <br><br>
+                    5,000 Litros
+                    <br><br>
+                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg"> <span style="vertical-align:top;">15</span>
+                  
+                </div>
+
+                <div class="productcards" style="width:24%;">
+                    <img class="productcardimage" src="../imgs/cisterna-gdpv/cisterna-10000-litros.png"/>
+                    <br><br>
+                    10,000 Litros
+                    <br><br>
+                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg"> <span style="vertical-align:top;">35</span>
+                   
+
+                </div>
+
+                
+            </div>
+        
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            
+
+            <div class="col-sm-12 center bold pad20 fs30" >
+
+                Siempre equipado con los mejores accesorios
+
+                
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 center" >
+                <img class="productcardimage" style="width:80%;"   src="../imgs/cisterna-gdpv/cisterna-accesorios.jpg">
+            </div>
+            <div class="col-sm-6 center" >
+                <img class="productcardimage" style="width:80%;"  src="../imgs/cisterna-gdpv/accesorios-cisterna.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 left bold pad20 fs30" >
+                <br><br>
+                Los pasos más sencillos para su instalación
+                <br><br>
+                <p class="gray light fs16">
+                El Tinaco Garantía de por vida, cuenta con los elementos necesarios e innovadores para instalarlo más fácilmente.
+                </p>
+                <br>
+                <br>
+                <span class="fs20" >
+                Descargables
+            </span>
+                <br><br>
+                <a class="nodecoration fs20 light ctadarkblue" target="_blank" href="https://rotoplas.com.mx/rtp-resources/productos/cisterna/cisterna-manual.pdf">Manual</a>
+                <a class="nodecoration fs20 light ctadarkblue" target="_blank" href="https://rotoplas.com.mx/rtp-resources/productos/cisterna/cisterna-ficha-tecnica.pdf">Ficha técnica</a>
+                <a class="nodecoration fs20 light ctadarkblue" href="../accesorios">Accesorios</a>
+
+            </div>
+            <div class="col-sm-6 center" >
+                <br><br>
+                <iframe class="pad20" width="560" height="315" src="https://www.youtube-nocookie.com/embed/j_6XJ00_suo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm-6 center" >
+                <img class="productcardimage" src="../imgs/recursos-generales/bim-revit-edificio.jpg">
+            </div>
+
+            <div class="col-sm-6 left bold pad20 fs30" >
+                Building Information Modeling
+                <br>
+                <p class="gray light fs16">
+                    Building Information Modeling (BIM) está cambiando la forma en que diseñamos y construimos. Siguiendo esta tendencia, Rotoplas ha creado paquetes de contenido de Revit y los pone a tu disposición.
+                </p>
+                <br><br>
+                <a class="nodecoration fs20 light ctadarkblue" target="_blank" href="https://coupafiles.rotoplas.com/Almacenamiento.zip">Descargar</a>
+
+            </div>
+        
+        </div>
+    </div>
+
+
+    <div id="breakelement" style="background-image: url(../imgs/recursos-generales/mapa-fondo.jpg); display:none;" >
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center bold fs30" id="breakelementblock">
+                    <br>
+                    <br>
+                    <img src="../imgs/recursos-generales/pin-ubicacion-mapa.svg" style="width:40px;"/>
+                    <br>
+                   ¿Dónde comprar?
+                    <p class="fs16 light pmax600 pad20 gray">
+                        Podemos ayudarte a localizar a un distribuidor que se ubique cerca de donde vives para que puedas adquirir lo que estas buscando
+                    </p>
+                    <a class="nodecoration fs20 light ctadarkblue" href="">Selecciona un distribuidor <img class="buttonarrow" src="../imgs/recursos-generales/flecha-icon.svg"></a>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="first">
+        <div class="container fs18">
+            <div class="row">
+                <div class="col-sm-12 center bold fs30" id="breakelementblock">
+                    Productos relacionados
+                </div>
+               
+            </div>
+
+            
+            <div class="row">
+
+
+
+
+
+
+
+                <div id="gdpv" class="col-sm-4 gray center fs20" style="margin: auto; display: inline-block;">
+                    <a class="lightgray nodecoration" href="../tinaco-garantia-de-por-vida/">
+                        <img src="../imgs/recursos-generales/tinaco-producto.png" class="productitem"><br>
+                        Tinaco Garantía de por vida
+                    </a>
+                    <br><br>
+                    <a class="nodecoration ctadarkblue" href="../tinaco-garantia-de-por-vida/">Ver producto</a>
+                </div>
+
+                <div id="tp" class="col-sm-3 gray center fs20" style="margin:auto; display:none;">
+                    <a class="lightgray nodecoration" href="../tinaco-plus/">
+                        <img src="../imgs/recursos-generales/tinaco-plus-producto.png" class="productitem"><br>
+                        Tinaco Plus+
+                    </a>
+                    <br><br>
+                    <a class="nodecoration ctadarkblue" href="../tinaco-plus/">Ver producto</a>
+                </div>
+
+
+
+
+
+
+                <div class="col-sm-4 gray center fs20" style="margin:auto;">
+                    <a class="lightgray nodecoration" href="../captador-pluvial-rural">
+                        <img src="../imgs/recursos-generales/captador-producto.png" class="productitem" /><br>
+                        Captador pluvial rural
+                    </a>
+                    <br><br>
+                    <a class="nodecoration ctadarkblue" href="../captador-pluvial-rural">Ver producto</a>
+                </div>
+
+
+                <div class="col-sm-4 gray center fs20" style="margin:auto;">
+                    <a class="lightgray nodecoration" href="../accesorios">
+                        <img src="../imgs/recursos-generales/accesorios-producto.png" class="productitem" /><br>
+                        Accesorios
+                    </a>
+                    <br><br>
+                    <a class="nodecoration ctadarkblue" href="../accesorios">Ver producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="container fs18">
+
+            <div class="row">
+                <div class="col-sm-4 white center pad20">
+                    <span class="lightblue bold"> Contáctanos </span>
+                    <br><br>
+                    <p class="left">
+                        <a class="menuitem white nodecoration" href="tel:8005063000" target="_blank"><img src="../imgs/recursos-generales/telefono-icon-footer.svg"/> 800 506 3000</a>
+                        <br><br>
+                        <a class="menuitem white nodecoration" target="_blank" href="https://rotoplas.com.mx/contacto/"><img src="../imgs/recursos-generales/mail-icon-footer.svg"/> Contacto</a>
+                    </p>
+                </div>
+                <div class="col-sm-4 center white pad20">
+                    <span class="lightblue bold"> Síguenos </span>
+                    <br><br>
+                    <a target="_blank" href="https://www.facebook.com/RotoplasMexico"><img class="rrss" src="../imgs/recursos-generales/facebook-icon.svg"/></a>
+                    <a target="_blank" href="https://www.youtube.com/user/masymejoragua"><img class="rrss" src="../imgs/recursos-generales/youtube-icon.svg"/></a>
+                    <a target="_blank" href="https://www.instagram.com/gruporotoplas/"><img class="rrss" src="../imgs/recursos-generales/instagram-icon.svg"/></a>
+                </div>
+
+                <div class="col-sm-4 white right">
+                    
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4 center">
+                    <a target="_blank" href="https://rotoplas.com.mx" class="white nodecoration">
+                        <img src="../imgs/recursos-generales/logo-rotoplas-footer.svg" class="logofooter">
+                    </a>
+                </div>
+                <div class="col-sm-4 center white pad40">
+                    <br><br>
+                    Copyright @ 2023. Rotoplas. S.A. de C.V
+                </div>
+
+                <div class="col-sm-4 white center pad40">
+                    <br><br>
+                    <a target="_blank" href="https://rotoplas.com.mx/aviso-de-privacidad/" class="white nodecoration">Aviso de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+
