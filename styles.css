@@ -160,6 +160,7 @@ body{
 #header{
     box-shadow: 0px 0px 10px gray;
     height:80px;
+    background-color: #002554;
 }
 
 #headerblock{
@@ -294,10 +295,11 @@ h1{
   
 
 .beneficiosbg{
-    background-position: right bottom;
-    background-size: auto 70%;
-    background-repeat: no-repeat;
-    background-color: #eee;;
+    /* background-position: right bottom;
+    background-size: auto 70%; */
+    /* background-repeat: no-repeat; */
+    /* background-color: #eee;; */
+    background-size: cover;
 }
 
 .productcards{
@@ -389,9 +391,10 @@ h1{
   }
 
 #breakelement{
-    background:#eee;
+    background:#002554;
     background-position: center center;
     background-size: cover;
+    color: #00aae3;
 }
 
 
@@ -714,3 +717,57 @@ h1{
     transform: scale(1) !important;
      cursor: not-allowed !important;
 }
+
+
+.new-slider2 {
+    background-image: url(imgs/home/fondo-almacenamiento-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 80px; */
+}
+.padding-slider {
+    /* padding: 0px 0px 0px 0px; */
+    padding-left: 80px;
+    margin: 0 0 0 0;
+}
+
+.padding-slider2 {
+    aspect-ratio: auto;
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 50;
+}
+
+.cajax {
+    display: grid;
+    grid-template-columns: 1fr 10px 2fr;
+}
+.bannerImage {
+    padding-top: 70px;
+}
+
+.bannerText {
+    align-self: center;
+}
+
+
+.cajax2 {
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+}
+
+@media (max-width: 900px) {
+    .cajax {
+        grid-template-columns: 1fr;
+    }
+
+    .bannerImage {
+        padding-top: 20px;
+    }
+
+    .bannerText {
+        padding-top: 30px;
+    }
+    
+  }

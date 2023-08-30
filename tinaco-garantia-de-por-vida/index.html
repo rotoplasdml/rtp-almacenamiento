@@ -1,542 +1,646 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="Rotoplas, Agua, Servicio, Almacenamiento" />
+    <!-- Keywords-->
+    <meta name="author" content="Rotoplas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-
-    
-
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="Rotoplas, Agua, Servicio, Almacenamiento"><!-- Keywords-->
-    <meta name="author" content="Rotoplas">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    <link rel="icon" href="../imgs/favicon.png">
+    <link rel="icon" href="../imgs/favicon.png" />
     <link rel="icon" href="../imgs/favicon.png" sizes="32x32" />
     <link rel="icon" href="../imgs/favicon.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="../imgs/favicon.png" />
-    
 
+    <meta property="og:title" content="" />
+    <!-- OpenGraph-->
+    <meta property="og:type" content="services" />
+    <meta property="og:url" content="" />
+    <!-- OpenGraph-->
+    <meta property="og:image" content="cover.jpg" />
 
-
-    
-<meta property="og:title" content="" /> <!-- OpenGraph-->
-<meta property="og:type" content="services" />
-<meta property="og:url" content="" /><!-- OpenGraph-->
-<meta property="og:image" content="cover.jpg" />
-    
-    
-    
     <script src="https://apis.google.com/js/api.js"></script>
 
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/simple-css-grid@1.7.0/css/simple-grid.min.css"
+    />
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/simple-css-grid@1.7.0/css/simple-grid.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
     <title>Rotoplas Tinaco Garantía de por vida</title>
 
-
-    
-    
-  
     <script>
+      window.addEventListener("scroll", function () {
+        var div = document.getElementById("fixedcta");
 
+        var element = document.getElementById("third");
+        var elementHeight = element.offsetHeight;
 
-        
+        var elementOffsetTop = element.offsetTop;
+        var elementMax = elementOffsetTop + elementHeight;
 
-        
-        window.addEventListener('scroll', function() {
-            var div = document.getElementById('fixedcta');
+        var scrollPosition = window.scrollY;
 
-            var element = document.getElementById('third'); 
-            var elementHeight = element.offsetHeight;
-            
-            var elementOffsetTop = element.offsetTop;
-            var elementMax = elementOffsetTop + elementHeight;
+        if (
+          (scrollPosition > 500 && scrollPosition < elementOffsetTop) ||
+          scrollPosition > elementMax
+        ) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      });
 
-            var scrollPosition = window.scrollY;
-           
-            if (scrollPosition > 500 && scrollPosition < elementOffsetTop || scrollPosition > elementMax) { 
-                div.style.display = 'block';
-            } else {
-                div.style.display = 'none';
-            }
+      document.addEventListener("DOMContentLoaded", function () {
+        var btnScroll = document.getElementById("fixedcta");
+        btnScroll.addEventListener("click", scrollToSection);
+        var btnScroll2 = document.getElementById("btnscroll1");
+        btnScroll2.addEventListener("click", scrollToSection);
+        var btnScroll3 = document.getElementById("btnscroll2");
+        btnScroll3.addEventListener("click", scrollToSection);
+        var btnScroll4 = document.getElementById("btnscroll3");
+        btnScroll4.addEventListener("click", scrollToSection);
 
-            
-        });
-        
+        function scrollToSection() {
+          var section = document.getElementById("formlead"); // Identificador de la sección a la que deseas desplazarte
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      });
 
-
-
-
-
-
-
-
-        document.addEventListener('DOMContentLoaded', function() {
-        
-
-
-
-
-            var btnScroll = document.getElementById('fixedcta');
-            btnScroll.addEventListener('click', scrollToSection);
-            var btnScroll2 = document.getElementById('btnscroll1');
-            btnScroll2.addEventListener('click', scrollToSection);
-            var btnScroll3 = document.getElementById('btnscroll2');
-            btnScroll3.addEventListener('click', scrollToSection);
-            var btnScroll4 = document.getElementById('btnscroll3');
-            btnScroll4.addEventListener('click', scrollToSection);
-
-            function scrollToSection() {
-            var section = document.getElementById('formlead'); // Identificador de la sección a la que deseas desplazarte
-            section.scrollIntoView({ behavior: 'smooth' });
-            }
-
-
-
-
-
-
-
-
-
-
+      $(document).ready(function () {
+        $("#closeicon").click(function () {
+          $("#thankyou").slideUp();
+          $(this).hide();
         });
 
-        
-
-
-        $(document).ready(function() {
- 
-
-  $('#closeicon').click(function(){
-    $('#thankyou').slideUp();
-    $(this).hide();
-  });
-
-
-
-  $(".questionbox").click(function() {
-    $(this).next(".answarebox").toggleClass("showansware");
-  });
-
-});
-
-
-
-
-
-
-    
+        $(".questionbox").click(function () {
+          $(this).next(".answarebox").toggleClass("showansware");
+        });
+      });
     </script>
-
-    
-
-    
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="../imgs/recursos-generales/logo-rotoplas.svg" class="logo">
-                </div>
-                <div class="col-sm-8 center pad30">
-                    <a class="nodecoration darkblue menuitem" target="_blank" href=""><img src="../imgs/recursos-generales/productos-menu-icon.svg"/> Productos</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="/">
+              <img
+                src="../imgs/recursos-generales/logo-rotoplas-footer.svg"
+                class="logo"
+              />
+            </a>
+          </div>
+          <div class="col-sm-8 center pad30">
+            <a class="nodecoration white menuitem" target="_blank" href=""
+              ><img src="../imgs/recursos-generales/productos-menu-icon.svg" />
+              Productos</a
+            >
 
-                    <!--
+            <!--
                     <a class="nodecoration darkblue menuitem" target="_blank" href=""><img src="../imgs/recursos-generales/pin-menu-icon.svg"/> Dónde comprar</a>
                     -->
-                    
-                    <a class="nodecoration darkblue menuitem" target="_blank" href="https://rotoplas.com.mx/contacto/"><img src="../imgs/recursos-generales/mail-icon-footer.svg"/> Contacto</a>
-                </div>
-            </div>
+
+            <a
+              class="nodecoration white menuitem"
+              target="_blank"
+              href="https://rotoplas.com.mx/contacto/"
+              ><img src="../imgs/recursos-generales/mail-icon-footer.svg" />
+              Contacto</a
+            >
+          </div>
         </div>
-    </div>
-
-
-
-
-
-  
-
-    <div id="slider" class="sliderlanding">
-
-        <div id="slider1" class="slidercontainerlanding active animate__animated animate__fadeIn" style="background-image:url(../imgs/recursos-generales/gota-fondo.jpg);">
-                            
-
-            <div class="row">
-                <div class="col-sm-6 center bold fs30">
-                    <img class="productheader" src="../imgs/tinaco-gdpv/tinaco-header.png"/>
-                </div>
-
-                <div class="col-sm-6 left bold fs30" id="breakelementblock">
-
-                    Tinaco Garantía de por vida
-                    <p class="fs16 left light pad20 pmax500 gray margin0">
-                        Los Tinacos Rotoplas son los únicos con garantía de por vida, además de que cuentan con el Filtro Hydro-Net®, el cual retiene tierra y sedimentos, evitando que se tapen las tuberías y brindando agua limpia y transparente de la mejor calidad. 
-
-                    </p>
-                    <br>
-                    <!--<a class="nodecoration fs20 light ctadarkblue" href="">Encuentra a un distribuidor <img class="buttonarrow" src="../imgs/recursos-generales/flecha-icon.svg"></a>-->
-                </div>
-               
-            </div>
-
-        </div>
-
-
-       
-
       </div>
-
-
-
-
-
-
-
-
-
-
-
-      <div class="beneficiosbg" style="background-image:url(../imgs/tinaco-gdpv/tinacos-beneficios.png)">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7 left bold fs30 pad40" >
-                    Beneficios
-                    <br><br>
-                    <p class="fs16 left light pmax600 gray margin0">
-                        · Cuentan con Garantía de por vida (aplica solo para Tinacos beige).
-                        <br>
-                        · Equipados con los mejores accesorios que aseguran su funcionamiento y calidad del agua.
-                        <br>
-                        · El Filtro Hydro-Net® retiene tierra y sedimentos, brindando agua limpia y transparente.
-                        <br>
-                        · Cuentan con una exclusiva capa antibacterial con tecnología Expel® inhibe la reproducción de bacterias, manteniendo el agua más limpia.
-                        <br>
-                        · Su tapa click con cierre perfecto evita que entren contaminantes al agua.
-                        <br>
-                        · Todos los accesorios incluidos están garantizados por cinco años y cero fugas.
-                        <br>
-                        · Los Tinacos Garantía de por vida, están fabricados en cumplimiento con la NOM NMX-C374-ONNCCE-CNCP-2012.
-
-                    </p>
-                </div>
-                <div class="col-sm-5 center bold fs30" >
-                  
-                </div>
-            </div>
-        </div>
     </div>
 
-
-
-
-
-    <div class="container">
+    <div id="slider" class="sliderlanding" style="padding-top: 50px; padding-bottom: 20px;">
+      <div
+        id="slider1"
+        class="slidercontainerlanding active animate__animated animate__fadeIn"
+        style="background-image: url(../imgs/nuevosRecursos/gota-fondo.jpg);"
+      >
         <div class="row">
-            
+          <div class="col-sm-6 center bold fs30">
+            <img
+              class="productheader"
+              src="../imgs/tinaco-gdpv/tinaco-header.png"
+            />
+          </div>
 
-            <div class="col-sm-12 center bold pad20 fs30" >
-
-                Gran variedad de capacidades  para que siempre encuentres una 
-                <br>¡hecha especialmente a tu medida!
-                
-            </div>
-        
+          <div class="col-sm-6 left bold fs30" id="breakelementblock">
+            Tinaco Garantía de por vida
+            <p class="fs16 left light pad20 pmax500 gray margin0">
+              Los Tinacos Rotoplas son los únicos con garantía de por vida,
+              además de que cuentan con el Filtro Hydro-Net®, el cual retiene
+              tierra y sedimentos, evitando que se tapen las tuberías y
+              brindando agua limpia y transparente de la mejor calidad.
+            </p>
+            <br />
+            <!--<a class="nodecoration fs20 light ctadarkblue" href="">Encuentra a un distribuidor <img class="buttonarrow" src="../imgs/recursos-generales/flecha-icon.svg"></a>-->
+          </div>
         </div>
+      </div>
     </div>
-
-    <div class="container">
-
-        <div class="row">
-            
-
-            <div class="col-sm-12 center bold pad20 fs20" >
-
-                <div class="productcards" style="width:10%;">
-                    <img class="productcardimage" src="../imgs/tinaco-gdpv/tinaco-450-litros.png"/>
-                    <br><br>
-                    450 Litros
-                    <br><br>
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                </div>
-
-
-                <div class="productcards" style="width:12%;">
-                    <img class="productcardimage" src="../imgs/tinaco-gdpv/tinaco-600-litros.png"/>
-                    <br><br>
-                    600 Litros
-                    <br><br>
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                </div>
-
-
-                <div class="productcards" style="width:15%;">
-                    <img class="productcardimage" src="../imgs/tinaco-gdpv/tinaco-750-litros.png"/>
-                    <br><br>
-                    750 Litros
-                    <br><br>
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                </div>
-
-                <div class="productcards" style="width:20%;">
-                    <img class="productcardimage" src="../imgs/tinaco-gdpv/tinaco-1100-litros.png"/>
-                    <br><br>
-                    1100 Litros
-                    <br><br>
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-
-                </div>
-
-                <div class="productcards" style="width:23%;">
-                    <img class="productcardimage" src="../imgs/tinaco-gdpv/tinaco-2500-litros.png"/>
-                    <br><br>
-                    2500 Litros
-                    <br><br>
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                    <img class="productcardicon" src="../imgs/recursos-generales/persona-icon.svg">
-                </div>
-                
+    <div style="
+    background-image: url(../imgs/nuevosRecursos/beneficios-productos-fondo.jpg);">
+      <div
+        class="beneficiosbg white"
+        style="
+          background-image: url(../imgs/nuevosRecursos/beneficios-productos-fondo.jpg);
+        "
+      >
+        <div class="cajax2">
+            <div class=" left bold fs30 pad40">
+              Beneficios
+              <br /><br />
+              <p class="fs16 left light pmax600 white margin0">
+                · Cuentan con Garantía de por vida (aplica solo para Tinacos
+                beige).
+                <br />
+                · Equipados con los mejores accesorios que aseguran su
+                funcionamiento y calidad del agua.
+                <br />
+                · El Filtro Hydro-Net® retiene tierra y sedimentos, brindando
+                agua limpia y transparente.
+                <br />
+                · Cuentan con una exclusiva capa antibacterial con tecnología
+                Expel® inhibe la reproducción de bacterias, manteniendo el agua
+                más limpia.
+                <br />
+                · Su tapa click con cierre perfecto evita que entren
+                contaminantes al agua.
+                <br />
+                · Todos los accesorios incluidos están garantizados por cinco
+                años y cero fugas.
+                <br />
+                · Los Tinacos Garantía de por vida, están fabricados en
+                cumplimiento con la NOM NMX-C374-ONNCCE-CNCP-2012.
+              </p>
             </div>
-        
-        </div>
-
-    </div>
-
-
-    <div class="container">
-        <div class="row">
-            
-
-            <div class="col-sm-12 center bold pad20 fs30" >
-
-                Siempre equipado con los mejores accesorios
-
-                
+            <div></div>
+            <div class="" style="padding-top: 50px;">
+                <img src="../imgs/tinaco-gdpv/tinacos-beneficios.png" alt="" srcset="" style="width: 100%;">
             </div>
-        
-        </div>
+          </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 center" >
-                <img class="productcardimage" style="width:80%;"   src="../imgs/tinaco-gdpv/tinaco-accesorios.jpg">
-            </div>
-            <div class="col-sm-6 center" >
-                <img class="productcardimage" style="width:80%;"  src="../imgs/tinaco-gdpv/accesorios.jpg">
-            </div>
+      <div class="row">
+        <div class="col-sm-12 center bold pad20 fs30">
+          Gran variedad de capacidades para que siempre encuentres una
+          <br />¡hecha especialmente a tu medida!
         </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 left bold pad20 fs30" >
-                <br><br>
-                Los pasos más sencillos para su instalación
-                <br><br>
-                <p class="gray light fs16">
-                El Tinaco Garantía de por vida, cuenta con los elementos necesarios e innovadores para instalarlo más fácilmente.
-                </p>
-                <br>
-                <br>
-                <span class="fs20" >
-                Descargables
-            </span>
-                <br><br>
-                <a class="nodecoration fs20 light ctadarkblue" target="_blank" href="https://rotoplas.com.mx/rtp-resources/productos/tinaco/tinaco-manual.pdf">Manual</a>
-                <a class="nodecoration fs20 light ctadarkblue" target="_blank" href="https://rotoplas.com.mx/rtp-resources/productos/tinaco/tinaco-ficha-tecnica.pdf">Ficha técnica</a>
-                <a class="nodecoration fs20 light ctadarkblue" href="../accesorios">Accesorios</a>
+      <div class="row">
+        <div class="col-sm-12 center bold pad20 fs20">
+          <div class="productcards" style="width: 10%">
+            <img
+              class="productcardimage"
+              src="../imgs/tinaco-gdpv/tinaco-450-litros.png"
+            />
+            <br /><br />
+            450 Litros
+            <br /><br />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+          </div>
 
-            </div>
-            <div class="col-sm-6 center" >
-                <br><br>
-                <iframe class="pad20" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z8VgW68P61Q?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+          <div class="productcards" style="width: 12%">
+            <img
+              class="productcardimage"
+              src="../imgs/tinaco-gdpv/tinaco-600-litros.png"
+            />
+            <br /><br />
+            600 Litros
+            <br /><br />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+          </div>
+
+          <div class="productcards" style="width: 15%">
+            <img
+              class="productcardimage"
+              src="../imgs/tinaco-gdpv/tinaco-750-litros.png"
+            />
+            <br /><br />
+            750 Litros
+            <br /><br />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+          </div>
+
+          <div class="productcards" style="width: 20%">
+            <img
+              class="productcardimage"
+              src="../imgs/tinaco-gdpv/tinaco-1100-litros.png"
+            />
+            <br /><br />
+            1100 Litros
+            <br /><br />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+          </div>
+
+          <div class="productcards" style="width: 23%">
+            <img
+              class="productcardimage"
+              src="../imgs/tinaco-gdpv/tinaco-2500-litros.png"
+            />
+            <br /><br />
+            2500 Litros
+            <br /><br />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+            <img
+              class="productcardicon"
+              src="../imgs/recursos-generales/persona-icon.svg"
+            />
+          </div>
         </div>
+      </div>
     </div>
-
 
     <div class="container">
+      <div class="row">
+        <div class="col-sm-12 center bold pad20 fs30">
+          Siempre equipado con los mejores accesorios
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 center">
+          <img
+            class="productcardimage"
+            style="width: 80%"
+            src="../imgs/tinaco-gdpv/tinaco-accesorios.jpg"
+          />
+        </div>
+        <div class="col-sm-6 center">
+          <img
+            class="productcardimage"
+            style="width: 80%"
+            src="../imgs/tinaco-gdpv/accesorios.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 left bold pad20 fs30">
+          <br /><br />
+          Los pasos más sencillos para su instalación
+          <br /><br />
+          <p class="gray light fs16">
+            El Tinaco Garantía de por vida, cuenta con los elementos necesarios
+            e innovadores para instalarlo más fácilmente.
+          </p>
+          <br />
+          <br />
+          <span class="fs20"> Descargables </span>
+          <br /><br />
+          <a
+            class="nodecoration fs20 light ctadarkblue"
+            target="_blank"
+            href="https://rotoplas.com.mx/rtp-resources/productos/tinaco/tinaco-manual.pdf"
+            >Manual</a
+          >
+          <a
+            class="nodecoration fs20 light ctadarkblue"
+            target="_blank"
+            href="https://rotoplas.com.mx/rtp-resources/productos/tinaco/tinaco-ficha-tecnica.pdf"
+            >Ficha técnica</a
+          >
+          <a class="nodecoration fs20 light ctadarkblue" href="../accesorios"
+            >Accesorios</a
+          >
+        </div>
+        <div class="col-sm-6 center">
+          <br /><br />
+          <iframe
+            class="pad20"
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/Z8VgW68P61Q?controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 center">
+          <img
+            class="productcardimage"
+            src="../imgs/recursos-generales/bim-revit-edificio.jpg"
+          />
+        </div>
+
+        <div class="col-sm-6 left bold pad20 fs30">
+          Building Information Modeling
+          <br />
+          <p class="gray light fs16">
+            Building Information Modeling (BIM) está cambiando la forma en que
+            diseñamos y construimos. Siguiendo esta tendencia, Rotoplas ha
+            creado paquetes de contenido de Revit y los pone a tu disposición.
+          </p>
+          <br /><br />
+          <a
+            class="nodecoration fs20 light ctadarkblue"
+            target="_blank"
+            href="https://coupafiles.rotoplas.com/Almacenamiento.zip"
+            >Descargar</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="breakelement"
+      style="
+        background-image: url(../imgs/recursos-generales/mapa-fondo.jpg);
+        display: none;
+      "
+    >
+      <div class="container">
         <div class="row">
-            
-            <div class="col-sm-6 center" >
-                <img class="productcardimage" src="../imgs/recursos-generales/bim-revit-edificio.jpg">
-            </div>
-
-            <div class="col-sm-6 left bold pad20 fs30" >
-                Building Information Modeling
-                <br>
-                <p class="gray light fs16">
-                    Building Information Modeling (BIM) está cambiando la forma en que diseñamos y construimos. Siguiendo esta tendencia, Rotoplas ha creado paquetes de contenido de Revit y los pone a tu disposición.
-                </p>
-                <br><br>
-                <a class="nodecoration fs20 light ctadarkblue" target="_blank" href="https://coupafiles.rotoplas.com/Almacenamiento.zip">Descargar</a>
-
-            </div>
-        
+          <div class="col-sm-12 center bold fs30" id="breakelementblock">
+            <br />
+            <br />
+            <img
+              src="../imgs/recursos-generales/pin-ubicacion-mapa.svg"
+              style="width: 40px"
+            />
+            <br />
+            ¿Dónde comprar?
+            <p class="fs16 light pmax600 pad20 gray">
+              Podemos ayudarte a localizar a un distribuidor que se ubique cerca
+              de donde vives para que puedas adquirir lo que estas buscando
+            </p>
+            <a class="nodecoration fs20 light ctadarkblue" href=""
+              >Selecciona un distribuidor
+              <img
+                class="buttonarrow"
+                src="../imgs/recursos-generales/flecha-icon.svg"
+            /></a>
+            <br />
+            <br />
+            <br />
+          </div>
         </div>
+      </div>
     </div>
-
-
-    <div id="breakelement" style="background-image: url(../imgs/recursos-generales/mapa-fondo.jpg); display:none;" >
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 center bold fs30" id="breakelementblock">
-                    <br>
-                    <br>
-                    <img src="../imgs/recursos-generales/pin-ubicacion-mapa.svg" style="width:40px;"/>
-                    <br>
-                   ¿Dónde comprar?
-                    <p class="fs16 light pmax600 pad20 gray">
-                        Podemos ayudarte a localizar a un distribuidor que se ubique cerca de donde vives para que puedas adquirir lo que estas buscando
-                    </p>
-                    <a class="nodecoration fs20 light ctadarkblue" href="">Selecciona un distribuidor <img class="buttonarrow" src="../imgs/recursos-generales/flecha-icon.svg"></a>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-
-
 
     <div id="first">
-        <div class="container fs18">
-            <div class="row">
-                <div class="col-sm-12 center bold fs30" id="breakelementblock">
-                    Productos relacionados
-                </div>
-               
-            </div>
-            <div class="row">
-
-                <div class="col-sm-3 gray center fs20" style="margin:auto;">
-                    <a class="lightgray nodecoration" href="../cisterna-garantia-de-por-vida/">
-                        <img src="../imgs/recursos-generales/cisterna-producto.png" class="productitem" /><br>
-                        Cisterna
-                    </a>
-                    <br><br>
-                    <a class="nodecoration ctadarkblue" href="../cisterna-garantia-de-por-vida/">Ver producto</a>
-                </div>
-
-
-                <div class="col-sm-3 gray center fs20" style="margin:auto;">
-                    <a class="lightgray nodecoration" href="../captador-pluvial-rural/">
-                        <img src="../imgs/recursos-generales/captador-producto.png" class="productitem" /><br>
-                        Captador pluvial rural
-                    </a>
-                    <br><br>
-                    <a class="nodecoration ctadarkblue" href="../captador-pluvial-rural/">Ver producto</a>
-                </div>
-
-
-                <div class="col-sm-3 gray center fs20" style="margin:auto;">
-                    <a class="lightgray nodecoration" href="../accesorios/">
-                        <img src="../imgs/recursos-generales/accesorios-producto.png" class="productitem" /><br>
-                        Accesorios
-                    </a>
-                    <br><br>
-                    <a class="nodecoration ctadarkblue" href="../accesorios/">Ver producto</a>
-                </div>
-            </div>
+      <div class="container fs18">
+        <div class="row">
+          <div class="col-sm-12 center bold fs30" id="breakelementblock">
+            Productos relacionados
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-3 gray center fs20" style="margin: auto">
+            <a
+              class="lightgray nodecoration"
+              href="../cisterna-garantia-de-por-vida/"
+            >
+              <img
+                src="../imgs/recursos-generales/cisterna-producto.png"
+                class="productitem"
+              /><br />
+              Cisterna
+            </a>
+            <br /><br />
+            <a
+              class="nodecoration ctadarkblue"
+              href="../cisterna-garantia-de-por-vida/"
+              >Ver producto</a
+            >
+          </div>
+
+          <div class="col-sm-3 gray center fs20" style="margin: auto">
+            <a class="lightgray nodecoration" href="../captador-pluvial-rural/">
+              <img
+                src="../imgs/recursos-generales/captador-producto.png"
+                class="productitem"
+              /><br />
+              Captador pluvial rural
+            </a>
+            <br /><br />
+            <a
+              class="nodecoration ctadarkblue"
+              href="../captador-pluvial-rural/"
+              >Ver producto</a
+            >
+          </div>
+
+          <div class="col-sm-3 gray center fs20" style="margin: auto">
+            <a class="lightgray nodecoration" href="../accesorios/">
+              <img
+                src="../imgs/recursos-generales/accesorios-producto.png"
+                class="productitem"
+              /><br />
+              Accesorios
+            </a>
+            <br /><br />
+            <a class="nodecoration ctadarkblue" href="../accesorios/"
+              >Ver producto</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
 
     <div id="footer">
-        <div class="container fs18">
+      <div class="container fs18">
+        <div class="row">
+          <div class="col-sm-4 white center pad20">
+            <span class="lightblue bold"> Contáctanos </span>
+            <br /><br />
+            <p class="left">
+              <a
+                class="menuitem white nodecoration"
+                href="tel:8005063000"
+                target="_blank"
+                ><img
+                  src="../imgs/recursos-generales/telefono-icon-footer.svg"
+                />
+                800 506 3000</a
+              >
+              <br /><br />
+              <a
+                class="menuitem white nodecoration"
+                target="_blank"
+                href="https://rotoplas.com.mx/contacto/"
+                ><img src="../imgs/recursos-generales/mail-icon-footer.svg" />
+                Contacto</a
+              >
+            </p>
+          </div>
+          <div class="col-sm-4 center white pad20">
+            <span class="lightblue bold"> Síguenos </span>
+            <br /><br />
+            <a target="_blank" href="https://www.facebook.com/RotoplasMexico"
+              ><img
+                class="rrss"
+                src="../imgs/recursos-generales/facebook-icon.svg"
+            /></a>
+            <a target="_blank" href="https://www.youtube.com/user/masymejoragua"
+              ><img
+                class="rrss"
+                src="../imgs/recursos-generales/youtube-icon.svg"
+            /></a>
+            <a target="_blank" href="https://www.instagram.com/gruporotoplas/"
+              ><img
+                class="rrss"
+                src="../imgs/recursos-generales/instagram-icon.svg"
+            /></a>
+          </div>
 
-            <div class="row">
-                <div class="col-sm-4 white center pad20">
-                    <span class="lightblue bold"> Contáctanos </span>
-                    <br><br>
-                    <p class="left">
-                        <a class="menuitem white nodecoration" href="tel:8005063000" target="_blank"><img src="../imgs/recursos-generales/telefono-icon-footer.svg"/> 800 506 3000</a>
-                        <br><br>
-                        <a class="menuitem white nodecoration" target="_blank" href="https://rotoplas.com.mx/contacto/"><img src="../imgs/recursos-generales/mail-icon-footer.svg"/> Contacto</a>
-                    </p>
-                </div>
-                <div class="col-sm-4 center white pad20">
-                    <span class="lightblue bold"> Síguenos </span>
-                    <br><br>
-                    <a target="_blank" href="https://www.facebook.com/RotoplasMexico"><img class="rrss" src="../imgs/recursos-generales/facebook-icon.svg"/></a>
-                    <a target="_blank" href="https://www.youtube.com/user/masymejoragua"><img class="rrss" src="../imgs/recursos-generales/youtube-icon.svg"/></a>
-                    <a target="_blank" href="https://www.instagram.com/gruporotoplas/"><img class="rrss" src="../imgs/recursos-generales/instagram-icon.svg"/></a>
-                </div>
-
-                <div class="col-sm-4 white right">
-                    
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-sm-4 center">
-                    <a target="_blank" href="https://rotoplas.com.mx" class="white nodecoration">
-                        <img src="../imgs/recursos-generales/logo-rotoplas-footer.svg" class="logofooter">
-                    </a>
-                </div>
-                <div class="col-sm-4 center white pad40">
-                    <br><br>
-                    Copyright @ 2023. Rotoplas. S.A. de C.V
-                </div>
-
-                <div class="col-sm-4 white center pad40">
-                    <br><br>
-                    <a target="_blank" href="https://rotoplas.com.mx/aviso-de-privacidad/" class="white nodecoration">Aviso de privacidad</a>
-                </div>
-            </div>
+          <div class="col-sm-4 white right"></div>
         </div>
+
+        <div class="row">
+          <div class="col-sm-4 center">
+            <a
+              target="_blank"
+              href="https://rotoplas.com.mx"
+              class="white nodecoration"
+            >
+              <img
+                src="../imgs/recursos-generales/logo-rotoplas-footer.svg"
+                class="logofooter"
+              />
+            </a>
+          </div>
+          <div class="col-sm-4 center white pad40">
+            <br /><br />
+            Copyright @ 2023. Rotoplas. S.A. de C.V
+          </div>
+
+          <div class="col-sm-4 white center pad40">
+            <br /><br />
+            <a
+              target="_blank"
+              href="https://rotoplas.com.mx/aviso-de-privacidad/"
+              class="white nodecoration"
+              >Aviso de privacidad</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-
-
-</body>
-
+  </body>
 </html>
-
-
-
