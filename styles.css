@@ -53,7 +53,7 @@ body {
 .gray{color: #2b2929;}
 .lightgray{color:gray;}
 
-/* padding */ 
+/* padding */
 .pad10 { padding:10px; }
 .pad20 { padding:20px; }
 .pad30 { padding:30px; }
@@ -69,8 +69,8 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     margin:20px;
-    border-radius: 40px; 
-    
+    border-radius: 40px;
+
 }
 
 /* ============================================================== */
@@ -133,16 +133,16 @@ body{
     padding-left: 20px;
     padding-right: 20px;
     margin:20px;
-    border-radius: 40px; 
+    border-radius: 40px;
     cursor:pointer;
     transition:all 1s;
-    
+
 }
 
 .ctadarkblue:hover{
     background:#00aae3;
     transition:all 1s;
-    
+
 }
 
 .menuitem{
@@ -168,7 +168,7 @@ body{
 }
 
 .logo{
-    margin:10px;
+    /* margin:10px; */
     height:60px;
 }
 
@@ -208,22 +208,22 @@ h1{
     background-size: auto 100%;
     background-position: left bottom;
     background-repeat: no-repeat;
-    
+
 
     display: none;
     opacity: 0;
     transition: all 1s ease-in-out;
   }
-  
-  
+
+
   .slidercontainer.active, .slidercontainerlanding.active {
     display: block;
     opacity:1;
     transition: all 1s ease-in-out;
 
   }
-  
-  
+
+
   .slide-content {
     max-width: 300px;
     text-align: left;
@@ -240,13 +240,13 @@ h1{
     position: absolute;
     left: 20%;
   }
-  
+
   .slide-content h2 {
     font-size: 30px;
     margin-bottom: 10px;
     font-weight: bolder;
   }
-  
+
   .slide-content h3 {
     font-size: 14px;
     margin-bottom: 20px;
@@ -257,9 +257,9 @@ h1{
     right: 20px;
     top: 40px;
     height: 80%;
-    
+
   }
-  
+
   #slidercontrols{
     position: absolute;
     bottom: 40px;
@@ -285,14 +285,14 @@ h1{
     opacity:1;
     transition: all 1s;
   }
-  
+
   .slidercontainercontrol:hover{
     transform:scale(1.2);
     transition: all 1s;
     background:#00aae3;
     opacity:1;
   }
-  
+
 
 .beneficiosbg{
     /* background-position: right bottom;
@@ -303,7 +303,7 @@ h1{
 }
 
 .productcards{
-    
+
     margin:10px;
     display: inline-block;
     vertical-align:bottom
@@ -358,7 +358,7 @@ h1{
 
 .clientcard:hover{
     transition: all 1s;
-    
+
 }
 
   .cardposition2{
@@ -394,7 +394,7 @@ h1{
     background:#002554;
     background-position: center center;
     background-size: cover;
-    color: #00aae3;
+    color: #0099DC;
 }
 
 
@@ -581,7 +581,7 @@ h1{
     cursor:pointer;
     transition:all 0.5s;
     transform: scale(1)  translate(0);
-    
+
 }
 
 
@@ -589,7 +589,7 @@ h1{
     background:#002554;
     transition:all 1s;
     transform: scale(1.1) translate(-100);
-    
+
 }
 
 #thankyou{
@@ -683,11 +683,11 @@ h1{
         display: block;
       }
 
-      
+
       .cardcontrolbutton{
         display:block;
       }
-    
+
     #slider2{
         background-position: 70%;
     }
@@ -769,5 +769,74 @@ h1{
     .bannerText {
         padding-top: 30px;
     }
-    
+
+  }
+
+
+  ul {
+    list-style: none;
+    background: #002554;
+  }
+
+  ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+  }
+
+  ul li a {
+    display: block;
+    padding: 20px 25px;
+    margin: 0 0 0 0 !important;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  ul li ul.dropdown li {
+    display: block;
+  }
+
+  ul li ul.dropdown {
+    width: 100%;
+    background: #002554;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+
+  ul li a:hover {
+    background: #00aae3;
+  }
+
+  ul li:hover ul.dropdown {
+    display: block;
+  }
+
+  .header22{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .accesorios {
+    background-image: url(../imgs/nuevosRecursos/fondo-accesorios.jpg);
+    background-size: cover;
+    padding: 30px 0;
+  }
+
+  .accesorios-interno {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .accesorios-interno img {
+    padding: 25px 0;
+  }
+
+  @media (max-width: 900px) {
+    .accesorios-interno {
+        display: block;
+      }
+
   }
