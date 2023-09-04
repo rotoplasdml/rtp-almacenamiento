@@ -47,7 +47,7 @@
     />
 
     <link rel="stylesheet" type="text/css" href="../styles.css" />
-    <title>Rotoplas Cisterna Garantía de por vida</title>
+    <title>Rotoplas Tinaco Resistec</title>
 
     <script>
       window.addEventListener("scroll", function () {
@@ -100,8 +100,7 @@
     </script>
   </head>
 
-  <body style="background-color: #002554;">
-    <!-- HEADER -->
+  <body style="background-color: #002554">
     <div
       class="header22"
       style="
@@ -160,21 +159,18 @@
           <div class="col-sm-6 center bold fs30">
             <img
               class="productheader"
-              src="../imgs/cisterna-gdpv/cisterna-header.png"
+              src="../imgs/tinaco-resistec/tinaco-resistec-header.png"
             />
           </div>
 
           <div class="col-sm-6 left bold fs30" id="breakelementblock">
-            Cisternas Garantía de por vida
+            Tinaco Resistec
             <p class="fs16 left light pad20 pmax500 gray margin0">
-              Las Cisternas Rotoplas cuentan con garantía de por vida y están
-              equipada con Filtro Hydro-Net®, el cual retiene tierra y
-              sedimentos, evitando que se tapen las tuberías y brindando agua
-              limpia transparente y de la mejor calidad.
-              <br />
-              <br />
-              Máxima calidad de por vida <br />
-              Equipados con los mejores accesorios
+              Tinaco resistente a la luz ultravioleta, equipado con los mejores
+              accesorios y con una capa blanca interna lisa que facilita la
+              limpieza del tinaco. Tapa click con cierre perfecto evitando la
+              entrada de contaminantes de fácil instalación y mantenimiento con
+              garantía de 5 años.
             </p>
             <br />
             <!--<a class="nodecoration fs20 light ctadarkblue" href="">Encuentra a un distribuidor <img class="buttonarrow" src="../imgs/recursos-generales/flecha-icon.svg"></a>-->
@@ -182,79 +178,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-      const datacity =
-        "https://api.bigdatacloud.net/data/reverse-geocode-client";
-
-      console.log(datacity);
-
-      fetch(datacity)
-        .then((response) => response.json())
-        .then((data) => {
-          const state = data.principalSubdivisionCode;
-          console.log(state);
-
-          const statelist = [
-            "MX-NLE",
-            "MX-COA",
-            "MX-TAM",
-            "MX-SIN",
-            "MX-SON",
-            "MX-BCN",
-            "MX-GUA",
-            "MX-MIC",
-            "MX-QRO",
-            "MX-SLP",
-            "MX-VER",
-            //"MX-AGU"
-          ];
-
-          const statelist2 = [
-            "MX-HID",
-            "MX-TLAX",
-            //"MX-AGU"
-          ];
-
-          let found = false;
-          for (let i = 0; i < statelist.length; i++) {
-            const stateselected = statelist[i].toLowerCase();
-            if (stateselected === state.toLowerCase()) {
-              found = true;
-              break;
-            }
-          }
-
-          let found2 = false;
-          for (let i = 0; i < statelist2.length; i++) {
-            const stateselected2 = statelist2[i].toLowerCase();
-            if (stateselected2 === state.toLowerCase()) {
-              found2 = true;
-              break;
-            }
-          }
-
-          if (found) {
-            console.log("La cadena coincide con tinacoplus.");
-            document.getElementById("tp").style.display = "inline-block";
-            document.getElementById("gdpv").style.display = "none";
-            //document.getElementById("*").style.display = "none";
-          } else if (found2) {
-            console.log("La cadena coincide con tinaco económico.");
-            document.getElementById("tp").style.display = "none";
-            document.getElementById("gdpv").style.display = "none";
-            // document.getElementById("*").style.display = "inline-block";
-          } else {
-            console.log("La cadena coincide con garantía de por vida.");
-            document.getElementById("tp").style.display = "none";
-            document.getElementById("gdpv").style.display = "inline-block";
-            //  document.getElementById("*").style.display = "none";
-          }
-        })
-        .catch((error) => {
-          console.log("Error al obtener los datos de ubicación: " + error);
-        });
-    </script>
 
     <div
       style="
@@ -272,22 +195,20 @@
             Beneficios
             <br /><br />
             <p class="fs16 left light pmax600 white margin0">
-              · La línea de Cisternas puede instalarse al exterior, gracias a su
-              exclusiva capa UV, la cual impide el paso de los rayos del sol.<br />
-              · Garantía de por vida, sin fisuras ni filtraciones.<br />
-              · Amplia entrada con tapa de 60 cm que permite un acceso más fácil
-              al interior facilitando su lavado y mantenimiento.<br />
-              · Su innovadora tecnología Expel® inhibe la reproducción de
-              bacterias.<br />
-              · El Filtro Hydro-Net® retiene sedimentos y asegura la calidad del
-              agua.<br />
-              · Todos los Accesorios incluidos están garantizados por 5 años*.
+              · Producto fabricado con polietileno de máxima calidad.
+              <br />
+              · Aprobado bajo las más estrictas normas de calidad
+              <br />
+              · Asegurando el funcionamiento del producto y cero fugas.
+              <br />
+              · Producto respaldado por Rotoplas bajo las condiciones de
+              garantía.
             </p>
           </div>
           <div></div>
           <div class="" style="display: flex; align-items: end">
             <img
-              src="../imgs/cisterna-gdpv/cisternas-beneficios.png"
+              src="../imgs/tinaco-resistec/tinacos-resistec-beneficios.png"
               alt=""
               srcset=""
               style="width: 100%"
@@ -321,64 +242,58 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 center bold fs20">
-            <div class="productcards" style="width: 12%">
+            <div class="productcards" style="width: 10%">
               <img
                 class="productcardimage"
-                src="../imgs/cisterna-gdpv/cisterna-1200-litros.png"
+                src="../imgs/tinaco-resistec/tinaco-resistec-450-litros.png"
               />
               <br /><br />
-              1,200 Litros
+              450 <br> Litros
               <br /><br />
               <img
                 class="productcardicon"
                 src="../imgs/recursos-generales/persona-icon.svg"
               />
-              <span style="vertical-align: top">5</span>
+            </div>
+
+            <div class="productcards" style="width: 12%">
+              <img
+                class="productcardimage"
+                src="../imgs/tinaco-resistec/tinaco-resistec-750-litros.png"
+              />
+              <br /><br />
+              750 <br> Litros
+              <br /><br />
+              <img
+                class="productcardicon"
+                src="../imgs/recursos-generales/persona-icon.svg"
+              />
+              <img
+                class="productcardicon"
+                src="../imgs/recursos-generales/persona-icon.svg"
+              />
             </div>
 
             <div class="productcards" style="width: 15%">
               <img
                 class="productcardimage"
-                src="../imgs/cisterna-gdpv/cisterna-2800-litros.png"
+                src="../imgs/tinaco-resistec/tinaco-resistec-1100-litros.png"
               />
               <br /><br />
-              2,800 Litros
-              <br /><br />
-              <img
-                class="productcardicon"
-                src="../imgs/recursos-generales/persona-icon.svg"
-              />
-              <span style="vertical-align: top">10</span>
-            </div>
-
-            <div class="productcards" style="width: 20%">
-              <img
-                class="productcardimage"
-                src="../imgs/cisterna-gdpv/cisterna-5000-litros.png"
-              />
-              <br /><br />
-              5,000 Litros
+              1,100 <br> Litros
               <br /><br />
               <img
                 class="productcardicon"
                 src="../imgs/recursos-generales/persona-icon.svg"
               />
-              <span style="vertical-align: top">15</span>
-            </div>
-
-            <div class="productcards" style="width: 23%">
-              <img
-                class="productcardimage"
-                src="../imgs/cisterna-gdpv/cisterna-10000-litros.png"
-              />
-              <br /><br />
-              10,000 Litros
-              <br /><br />
               <img
                 class="productcardicon"
                 src="../imgs/recursos-generales/persona-icon.svg"
               />
-              <span style="vertical-align: top">35</span>
+              <img
+                class="productcardicon"
+                src="../imgs/recursos-generales/persona-icon.svg"
+              />
             </div>
           </div>
         </div>
@@ -396,146 +311,25 @@
         <div>
           <img
             style="width: 100%"
-            src="../imgs/cisterna-gdpv/cisterna-accesorios.png"
+            src="../imgs/tinaco-resistec/resistec-accesorios.png"
             alt=""
           />
         </div>
         <div style="display: flex; justify-content: center">
           <img
             style="width: 80%"
-            src="../imgs/cisterna-gdpv/accesorios-cisterna.png"
+            src="../imgs/tinaco-resistec/accesorios-resistec.png"
             alt=""
           />
         </div>
       </div>
     </div>
 
-    <!-- INSTALACION -->
-    <div class="extern">
-      <div class="video-element">
-        <div class="video-element-1">
-          <h2 class="bold fs30">Los pasos más sencillos para su instalación</h2>
-          <p class="white light fs16" style="padding-top: 20px">
-            El Tinaco Garantía de por vida, cuenta con los elementos necesarios
-            e innovadores para instalarlo más fácilmente.
-          </p>
-          <p class="fs20 white" style="padding: 20px 0 !important">
-            Descargables
-          </p>
-          <div class="video-element-btn">
-            <a
-              class="nodecoration fs20 light"
-              target="_blank"
-              href="https://rotoplas.com.mx/rtp-resources/productos/cisterna/cisterna-manual.pdf"
-              >Manual</a
-            >
-            <a
-              class="nodecoration fs20 light"
-              target="_blank"
-              href="https://rotoplas.com.mx/rtp-resources/productos/cisterna/cisterna-ficha-tecnica.pdf"
-              >Ficha técnica</a
-            >
-            <a class="nodecoration fs20 light" href="../accesorios"
-              >Accesorios</a
-            >
-          </div>
-        </div>
-        <div class="video-element-2">
-          <iframe
-            class=""
-            width="100%"
-            height="100%"
-            src="https://www.youtube-nocookie.com/embed/j_6XJ00_suo?controls=0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
-
-    <div class="extern">
-      <div class="bim-module video-element">
-        <div class="bim-module-1">
-          <img
-            class=""
-            src="../imgs/recursos-generales/bim-revit-edificio.jpg"
-          />
-        </div>
-        <div class="bim-module-2">
-          <h2 class="fs30 bold">Building Information Modeling</h2>
-          <p class="white light fs16">
-            Building Information Modeling (BIM) está cambiando la forma en que
-            diseñamos y construimos. Siguiendo esta tendencia, Rotoplas ha
-            creado paquetes de contenido de Revit y los pone a tu disposición.
-          </p>
-          <div class="video-element-btn">
-            <a
-              class="nodecoration fs20 light"
-              target="_blank"
-              href="https://coupafiles.rotoplas.com/Almacenamiento.zip"
-              >Descargar</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      id="breakelement"
-      style="
-        background-image: url(../imgs/recursos-generales/mapa-fondo.jpg);
-        display: none;
-      "
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 center bold fs30" id="breakelementblock">
-            <br />
-            <br />
-            <img
-              src="../imgs/recursos-generales/pin-ubicacion-mapa.svg"
-              style="width: 40px"
-            />
-            <br />
-            ¿Dónde comprar?
-            <p class="fs16 light pmax600 pad20 gray">
-              Podemos ayudarte a localizar a un distribuidor que se ubique cerca
-              de donde vives para que puedas adquirir lo que estas buscando
-            </p>
-            <a class="nodecoration fs20 light ctadarkblue" href=""
-              >Selecciona un distribuidor
-              <img
-                class="buttonarrow"
-                src="../imgs/recursos-generales/flecha-icon.svg"
-            /></a>
-            <br />
-            <br />
-            <br />
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <!-- RELACIONADOS -->
     <div class="extern" style="background-color: #fff; padding-top: 50px">
       <div class="">
         <h2 class="center bold fs30">Productos relacionados</h2>
         <div class="productos-relacionados">
-          <div class="productos-relacionados-card">
-            <a href="../tinaco-plus/" class="nodecoration">
-              <img
-                src="../imgs/recursos-generales/tinaco-plus-producto.png"
-                class="productitem"
-                style="width: 100%"
-              />
-              <p class="center fs20 gray">Tinaco Plus+</p>
-            </a>
-            <a class="nodecoration ctadarkblue center" href="../tinaco-plus/"
-              >Ver producto</a
-            >
-          </div>
-
           <div class="productos-relacionados-card">
             <a href="../tinaco-garantia-de-por-vida/" class="nodecoration">
               <img
@@ -548,6 +342,20 @@
             <a
               class="nodecoration ctadarkblue center"
               href="../tinaco-garantia-de-por-vida/"
+              >Ver producto</a
+            >
+          </div>
+
+          <div class="productos-relacionados-card">
+            <a href="../tinaco-plus/" class="nodecoration">
+              <img
+                src="../imgs/recursos-generales/tinaco-plus-producto.png"
+                class="productitem"
+                style="width: 100%"
+              />
+              <p class="center fs20 gray">Tinaco Plus+</p>
+            </a>
+            <a class="nodecoration ctadarkblue center" href="../tinaco-plus/"
               >Ver producto</a
             >
           </div>
