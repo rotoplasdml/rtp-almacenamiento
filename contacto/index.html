@@ -1,0 +1,259 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="Rotoplas, Agua, Servicio, Almacenamiento" />
+    <!-- Keywords-->
+    <meta name="author" content="Rotoplas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../imgs/favicon.png" />
+    <link rel="icon" href="../imgs/favicon.png" sizes="32x32" />
+    <link rel="icon" href="../imgs/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="../imgs/favicon.png" />
+
+    <meta property="og:title" content="" />
+    <!-- OpenGraph-->
+    <meta property="og:type" content="services" />
+    <meta property="og:url" content="" />
+    <!-- OpenGraph-->
+    <meta property="og:image" content="cover.jpg" />
+
+    <script src="https://apis.google.com/js/api.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/simple-css-grid@1.7.0/css/simple-grid.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <title>Contacto</title>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var div = document.getElementById("fixedcta");
+
+        var element = document.getElementById("third");
+        var elementHeight = element.offsetHeight;
+
+        var elementOffsetTop = element.offsetTop;
+        var elementMax = elementOffsetTop + elementHeight;
+
+        var scrollPosition = window.scrollY;
+
+        if (
+          (scrollPosition > 500 && scrollPosition < elementOffsetTop) ||
+          scrollPosition > elementMax
+        ) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var btnScroll = document.getElementById("fixedcta");
+        btnScroll.addEventListener("click", scrollToSection);
+        var btnScroll2 = document.getElementById("btnscroll1");
+        btnScroll2.addEventListener("click", scrollToSection);
+        var btnScroll3 = document.getElementById("btnscroll2");
+        btnScroll3.addEventListener("click", scrollToSection);
+        var btnScroll4 = document.getElementById("btnscroll3");
+        btnScroll4.addEventListener("click", scrollToSection);
+
+        function scrollToSection() {
+          var section = document.getElementById("formlead"); // Identificador de la sección a la que deseas desplazarte
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+
+      $(document).ready(function () {
+        $("#closeicon").click(function () {
+          $("#thankyou").slideUp();
+          $(this).hide();
+        });
+
+        $(".questionbox").click(function () {
+          $(this).next(".answarebox").toggleClass("showansware");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      id="header"
+      class="header22"
+      style="
+        background-color: #002554;
+        margin: 0 0 0 0 !important;
+        padding: 10px 0 !important;
+      "
+    >
+      <a
+        style="margin: 0 0 0 0 !important; padding: 0 0 0 0 !important"
+        href="https://rotoplas.com.mx/almacenamiento/"
+      >
+        <img
+          src="../imgs/recursos-generales/logo-rotoplas-footer.svg"
+          class="logo"
+        />
+      </a>
+      <ul class="">
+        <li>
+          <a
+            class="nodecoration white menuitem"
+            href="https://rotoplas.com.mx/almacenamiento/"
+            ><img src="../imgs/recursos-generales/productos-menu-icon.svg" />
+            Productos</a
+          >
+          <ul class="dropdown">
+            <li><a href="../tinaco-plus/">Tinaco Plus+</a></li>
+            <li>
+              <a href="../tinaco-garantia-de-por-vida/"
+                >Tinaco Garantía de por vida</a
+              >
+            </li>
+            <!-- <li><a href="../tinaco-resistec/">Tinaco Resistec</a></li> -->
+            <li><a href="../cisterna-garantia-de-por-vida/">Cisternas</a></li>
+            <li><a href="../accesorios/">Accesorios</a></li>
+          </ul>
+        </li>
+        <li>
+          <a
+            class="nodecoration white menuitem"
+            href="../contacto/"
+            ><img src="../imgs/recursos-generales/mail-icon-footer.svg" />
+            Contacto</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      class="formulario-contacto"
+      style="background-image: url(../imgs/contacto/contacto-fondo.jpg)"
+    >
+      <div class="formulario-contacto-form">
+        <h2 class="bold fs40">Contáctanos</h2>
+        <form action="/my-handling-form-page" method="post">
+          <div>
+            <label class="" for="name">Nombre</label>
+            <input type="text" id="name" name="user_name" />
+          </div>
+          <div>
+            <label for="mail">Correo electrónico</label>
+            <input type="email" id="mail" name="user_mail" />
+          </div>
+          <div>
+            <label for="msg">Mensaje</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </div>
+          <div class="submit-btn">
+            <button class="nodecoration fs20 light ctadarkblue" type="submit">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+      <img src="../imgs/contacto/productos-contacto.png" alt="" />
+    </div>
+    <div id="footer">
+      <div class="container fs18">
+        <div class="row">
+          <div class="col-sm-4 white center pad20">
+            <span class="lightblue bold"> Contáctanos </span>
+            <br /><br />
+            <p class="left">
+              <a
+                class="menuitem white nodecoration"
+                href="tel:8005063000"
+                target="_blank"
+                ><img
+                  src="../imgs/recursos-generales/telefono-icon-footer.svg"
+                />
+                800 506 3000</a
+              >
+              <br /><br />
+              <a
+                class="menuitem white nodecoration"
+                target="_blank"
+                href="https://rotoplas.com.mx/contacto/"
+                ><img src="../imgs/recursos-generales/mail-icon-footer.svg" />
+                Contacto</a
+              >
+            </p>
+          </div>
+          <div class="col-sm-4 center white pad20">
+            <span class="lightblue bold"> Síguenos </span>
+            <br /><br />
+            <a target="_blank" href="https://www.facebook.com/RotoplasMexico"
+              ><img
+                class="rrss"
+                src="../imgs/recursos-generales/facebook-icon.svg"
+            /></a>
+            <a target="_blank" href="https://www.youtube.com/user/masymejoragua"
+              ><img
+                class="rrss"
+                src="../imgs/recursos-generales/youtube-icon.svg"
+            /></a>
+            <a target="_blank" href="https://www.instagram.com/gruporotoplas/"
+              ><img
+                class="rrss"
+                src="../imgs/recursos-generales/instagram-icon.svg"
+            /></a>
+          </div>
+
+          <div class="col-sm-4 white right"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 center">
+            <a
+              target="_blank"
+              href="https://rotoplas.com.mx"
+              class="white nodecoration"
+            >
+              <img
+                src="../imgs/recursos-generales/logo-rotoplas-footer.svg"
+                class="logofooter"
+              />
+            </a>
+          </div>
+          <div class="col-sm-4 center white pad40">
+            <br /><br />
+            Copyright @ 2023. Rotoplas. S.A. de C.V
+          </div>
+
+          <div class="col-sm-4 white center pad40">
+            <br /><br />
+            <a
+              target="_blank"
+              href="https://rotoplas.com.mx/aviso-de-privacidad/"
+              class="white nodecoration"
+              >Aviso de privacidad</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

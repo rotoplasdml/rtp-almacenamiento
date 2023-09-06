@@ -971,6 +971,55 @@ ul li:hover ul.dropdown {
   justify-content: center;
 }
 
+.formulario-contacto {
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #fff;
+}
+
+.formulario-contacto-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.formulario-contacto-form form div{
+    margin-top: 10px;
+}
+
+.formulario-contacto-form form input{
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 100%;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn button {
+    width: 200px;
+}
+
+.formulario-contacto-form form textarea{
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 100%;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.formulario-contacto img {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
 @media (max-width: 900px) {
   .video-element {
     grid-template-columns: 1fr;
@@ -997,6 +1046,15 @@ ul li:hover ul.dropdown {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .formulario-contacto {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario-contacto-form {
+    padding: 20px;
+  }
+
 }
 
 @media (min-width: 1440px) {
