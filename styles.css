@@ -1020,6 +1020,14 @@ ul li:hover ul.dropdown {
   padding-bottom: 30px;
 }
 
+.descargable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
 @media (max-width: 900px) {
   .video-element {
     grid-template-columns: 1fr;
