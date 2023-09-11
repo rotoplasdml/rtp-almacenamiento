@@ -1,437 +1,378 @@
 <html>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WDSMT2H");
+    </script>
+    <!-- End Google Tag Manager -->
 
-<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="Rotoplas, Agua, Servicio, Almacenamiento" />
+    <!-- Keywords-->
+    <meta name="author" content="Rotoplas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
-
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="Rotoplas, Agua, Servicio, Almacenamiento"><!-- Keywords-->
-    <meta name="author" content="Rotoplas">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    <link rel="icon" href="../imgs/favicon.png">
+    <link rel="icon" href="../imgs/favicon.png" />
     <link rel="icon" href="../imgs/favicon.png" sizes="32x32" />
     <link rel="icon" href="../imgs/favicon.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="../imgs/favicon.png" />
-    
 
+    <meta property="og:title" content="" />
+    <!-- OpenGraph-->
+    <meta property="og:type" content="services" />
+    <meta property="og:url" content="" />
+    <!-- OpenGraph-->
+    <meta property="og:image" content="cover.jpg" />
 
-
-    
-<meta property="og:title" content="" /> <!-- OpenGraph-->
-<meta property="og:type" content="services" />
-<meta property="og:url" content="" /><!-- OpenGraph-->
-<meta property="og:image" content="cover.jpg" />
-    
-    
-    
     <script src="https://apis.google.com/js/api.js"></script>
 
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/simple-css-grid@1.7.0/css/simple-grid.min.css"
+    />
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/simple-css-grid@1.7.0/css/simple-grid.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
     <title>Rotoplas Sistema de Captación Pluvial Rural</title>
 
-
-    
-    
-  
     <script>
+      window.addEventListener("scroll", function () {
+        var div = document.getElementById("fixedcta");
 
+        var element = document.getElementById("third");
+        var elementHeight = element.offsetHeight;
 
-        
+        var elementOffsetTop = element.offsetTop;
+        var elementMax = elementOffsetTop + elementHeight;
 
-        
-        window.addEventListener('scroll', function() {
-            var div = document.getElementById('fixedcta');
+        var scrollPosition = window.scrollY;
 
-            var element = document.getElementById('third'); 
-            var elementHeight = element.offsetHeight;
-            
-            var elementOffsetTop = element.offsetTop;
-            var elementMax = elementOffsetTop + elementHeight;
+        if (
+          (scrollPosition > 500 && scrollPosition < elementOffsetTop) ||
+          scrollPosition > elementMax
+        ) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      });
 
-            var scrollPosition = window.scrollY;
-           
-            if (scrollPosition > 500 && scrollPosition < elementOffsetTop || scrollPosition > elementMax) { 
-                div.style.display = 'block';
-            } else {
-                div.style.display = 'none';
-            }
+      document.addEventListener("DOMContentLoaded", function () {
+        var btnScroll = document.getElementById("fixedcta");
+        btnScroll.addEventListener("click", scrollToSection);
+        var btnScroll2 = document.getElementById("btnscroll1");
+        btnScroll2.addEventListener("click", scrollToSection);
+        var btnScroll3 = document.getElementById("btnscroll2");
+        btnScroll3.addEventListener("click", scrollToSection);
+        var btnScroll4 = document.getElementById("btnscroll3");
+        btnScroll4.addEventListener("click", scrollToSection);
 
-            
-        });
-        
+        function scrollToSection() {
+          var section = document.getElementById("formlead"); // Identificador de la sección a la que deseas desplazarte
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      });
 
-
-
-
-
-
-
-
-        document.addEventListener('DOMContentLoaded', function() {
-        
-
-
-
-
-            var btnScroll = document.getElementById('fixedcta');
-            btnScroll.addEventListener('click', scrollToSection);
-            var btnScroll2 = document.getElementById('btnscroll1');
-            btnScroll2.addEventListener('click', scrollToSection);
-            var btnScroll3 = document.getElementById('btnscroll2');
-            btnScroll3.addEventListener('click', scrollToSection);
-            var btnScroll4 = document.getElementById('btnscroll3');
-            btnScroll4.addEventListener('click', scrollToSection);
-
-            function scrollToSection() {
-            var section = document.getElementById('formlead'); // Identificador de la sección a la que deseas desplazarte
-            section.scrollIntoView({ behavior: 'smooth' });
-            }
-
-
-
-
-
-
-
-
-
-
+      $(document).ready(function () {
+        $("#closeicon").click(function () {
+          $("#thankyou").slideUp();
+          $(this).hide();
         });
 
-        
-
-
-        $(document).ready(function() {
- 
-
-  $('#closeicon').click(function(){
-    $('#thankyou').slideUp();
-    $(this).hide();
-  });
-
-
-
-  $(".questionbox").click(function() {
-    $(this).next(".answarebox").toggleClass("showansware");
-  });
-
-});
-
-
-
-
-
-
-    
+        $(".questionbox").click(function () {
+          $(this).next(".answarebox").toggleClass("showansware");
+        });
+      });
     </script>
-
-    
-
-    
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="../imgs/recursos-generales/logo-rotoplas.svg" class="logo">
-                </div>
-                <div class="col-sm-8 center pad30">
-                    <a class="nodecoration darkblue menuitem" target="_blank" href=""><img src="../imgs/recursos-generales/productos-menu-icon.svg"/> Productos</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <img
+              src="../imgs/recursos-generales/logo-rotoplas.svg"
+              class="logo"
+            />
+          </div>
+          <div class="col-sm-8 center pad30">
+            <a class="nodecoration darkblue menuitem" target="_blank" href=""
+              ><img src="../imgs/recursos-generales/productos-menu-icon.svg" />
+              Productos</a
+            >
 
-                    <!--
+            <!--
                     <a class="nodecoration darkblue menuitem" target="_blank" href=""><img src="../imgs/recursos-generales/pin-menu-icon.svg"/> Dónde comprar</a>
                     -->
-                    
-                    <a class="nodecoration darkblue menuitem" target="_blank" href="https://rotoplas.com.mx/contacto/"><img src="../imgs/recursos-generales/mail-icon-footer.svg"/> Contacto</a>
-                </div>
-            </div>
+
+            <a
+              class="nodecoration darkblue menuitem"
+              target="_blank"
+              href="https://rotoplas.com.mx/contacto/"
+              ><img src="../imgs/recursos-generales/mail-icon-footer.svg" />
+              Contacto</a
+            >
+          </div>
         </div>
+      </div>
     </div>
-
-
-
 
     <script>
-        const datacity = "https://api.bigdatacloud.net/data/reverse-geocode-client";
+      const datacity =
+        "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
-console.log(datacity);
+      console.log(datacity);
 
-fetch(datacity)
-.then(response => response.json())
-.then(data => {
-  const state = data.principalSubdivisionCode;
-  console.log(state);
+      fetch(datacity)
+        .then((response) => response.json())
+        .then((data) => {
+          const state = data.principalSubdivisionCode;
+          console.log(state);
 
-  const statelist = [
-    "MX-NLE",
-    "MX-COA",
-    "MX-TAM",
-    "MX-SIN",
-    "MX-SON",
-    "MX-BCN",
-    "MX-GUA",
-    "MX-MIC",
-    "MX-QRO",
-    "MX-SLP",
-    "MX-VER"
-    //"MX-AGU"
-  ];
+          const statelist = [
+            "MX-NLE",
+            "MX-COA",
+            "MX-TAM",
+            "MX-SIN",
+            "MX-SON",
+            "MX-BCN",
+            "MX-GUA",
+            "MX-MIC",
+            "MX-QRO",
+            "MX-SLP",
+            "MX-VER",
+            //"MX-AGU"
+          ];
 
+          const statelist2 = [
+            "MX-HID",
+            "MX-TLAX",
+            //"MX-AGU"
+          ];
 
-  const statelist2 = [
-    "MX-HID",
-    "MX-TLAX"
-    //"MX-AGU"
-  ];
+          let found = false;
+          for (let i = 0; i < statelist.length; i++) {
+            const stateselected = statelist[i].toLowerCase();
+            if (stateselected === state.toLowerCase()) {
+              found = true;
+              break;
+            }
+          }
 
-  let found = false;
-  for (let i = 0; i < statelist.length; i++) {
-    const stateselected = statelist[i].toLowerCase();
-    if (stateselected === state.toLowerCase()) {
-      found = true;
-      break;
-    }
-  }
+          let found2 = false;
+          for (let i = 0; i < statelist2.length; i++) {
+            const stateselected2 = statelist2[i].toLowerCase();
+            if (stateselected2 === state.toLowerCase()) {
+              found2 = true;
+              break;
+            }
+          }
 
-  let found2 = false;
-  for (let i = 0; i < statelist2.length; i++) {
-    const stateselected2 = statelist2[i].toLowerCase();
-    if (stateselected2 === state.toLowerCase()) {
-      found2 = true;
-      break;
-    }
-  }
-
-  if (found) {
-    console.log("La cadena coincide con tinacoplus.");
-    document.getElementById("tp").style.display = "inline-block";
-    document.getElementById("gdpv").style.display = "none";
-    //document.getElementById("*").style.display = "none";
-  }
-  else if (found2) {
-    console.log("La cadena coincide con tinaco económico.");
-    document.getElementById("tp").style.display = "none";
-    document.getElementById("gdpv").style.display = "none";
-   // document.getElementById("*").style.display = "inline-block";
-  }
-  else {
-    console.log("La cadena coincide con garantía de por vida.");
-    document.getElementById("tp").style.display = "none";
-    document.getElementById("gdpv").style.display = "inline-block";
-  //  document.getElementById("*").style.display = "none";
-  }
-})
-.catch(error => {
-  console.log("Error al obtener los datos de ubicación: " + error);
-});
-
-
-            
-      </script>
-
-
-
-
-  
+          if (found) {
+            console.log("La cadena coincide con tinacoplus.");
+            document.getElementById("tp").style.display = "inline-block";
+            document.getElementById("gdpv").style.display = "none";
+            //document.getElementById("*").style.display = "none";
+          } else if (found2) {
+            console.log("La cadena coincide con tinaco económico.");
+            document.getElementById("tp").style.display = "none";
+            document.getElementById("gdpv").style.display = "none";
+            // document.getElementById("*").style.display = "inline-block";
+          } else {
+            console.log("La cadena coincide con garantía de por vida.");
+            document.getElementById("tp").style.display = "none";
+            document.getElementById("gdpv").style.display = "inline-block";
+            //  document.getElementById("*").style.display = "none";
+          }
+        })
+        .catch((error) => {
+          console.log("Error al obtener los datos de ubicación: " + error);
+        });
+    </script>
 
     <div id="slider" class="sliderlanding">
+      <div
+        id="slider1"
+        class="slidercontainerlanding active animate__animated animate__fadeIn"
+        style="background-image: url(../imgs/recursos-generales/gota-fondo.jpg)"
+      >
+        <div class="row">
+          <div class="col-sm-6 center bold fs30">
+            <img
+              class="productheader"
+              src="../imgs/captador/captador-pluvial-rural-header.png"
+            />
+          </div>
 
-        <div id="slider1" class="slidercontainerlanding active animate__animated animate__fadeIn" style="background-image:url(../imgs/recursos-generales/gota-fondo.jpg);">
-                            
-
-            <div class="row">
-                <div class="col-sm-6 center bold fs30">
-                    <img class="productheader" src="../imgs/captador/captador-pluvial-rural-header.png"/>
-                </div>
-
-                <div class="col-sm-6 left bold fs30" id="breakelementblock">
-
-                    Sistema de Captación Pluvial Rural
-                    <p class="fs16 left light pad20 pmax500 gray margin0">
-                        El Sistema de Captación Pluvial favorece el desarrollo de comunidades debido a que provee agua de uso doméstico para consumo familiar. Promueve el uso racional del agua ya que impulsa el aprovechamiento integral del agua de lluvia mediante la captación, almacenamiento y uso desde una fuente sustentable.
-
-                    </p>
-                    <br>
-                <!-- <a class="nodecoration fs20 light ctadarkblue" href="">Encuentra a un distribuidor <img class="buttonarrow" src="../imgs/recursos-generales/flecha-icon.svg"></a>-->   
-                </div>
-               
-            </div>
-
+          <div class="col-sm-6 left bold fs30" id="breakelementblock">
+            Sistema de Captación Pluvial Rural
+            <p class="fs16 left light pad20 pmax500 gray margin0">
+              El Sistema de Captación Pluvial favorece el desarrollo de
+              comunidades debido a que provee agua de uso doméstico para consumo
+              familiar. Promueve el uso racional del agua ya que impulsa el
+              aprovechamiento integral del agua de lluvia mediante la captación,
+              almacenamiento y uso desde una fuente sustentable.
+            </p>
+            <br />
+            <!-- <a class="nodecoration fs20 light ctadarkblue" href="">Encuentra a un distribuidor <img class="buttonarrow" src="../imgs/recursos-generales/flecha-icon.svg"></a>-->
+          </div>
         </div>
-
-
-       
-
       </div>
-
-
-
-
-
-
-
-
-
-
-
-      <div class="beneficiosbg" style="background-image:url(../imgs/captador/captador-pluvial-rural-beneficios.png)">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7 left bold fs30 pad40" >
-                    Beneficios
-                    <br><br>
-                    <p class="fs16 left light pmax600 gray margin0">
-                        · Accesible, resuelve la necesidad de abastecimiento y almacenamiento de agua potable a nivel vivienda en comunidades con rezago.<br>
-                        · Es una alternativa viable que provee agua para el consumo humano en funciones básicas como: alimentación (preparación de alimentos y agua para beber), higiene personal, limpieza y aseo de la vivienda e incluso riego.<br>
-                        · Sustentable, contribuye a la sostenibilidad y protección del medio ambiente al aprovechar el recurso natural de agua de lluvia dentro de su ciclo regular.<br>
-                        · Amigable con el entorno, su diseño y tecnología facilita su instalación además que permite una rápida adopción y mantenimiento por parte de los beneficiarios.<br>
-                        · Versátil, el Tanque de Almacenamiento cuenta con cuerpo reforzado para ser instalado en cualquier tipo de suelo (exterior).<br>
-                        · Sostenible, sin gasto adicional por consumo de energía eléctrica gracias a su Bomba de agua manual.<br>
-                        · Eleva la calidad de vida de los beneficiarios al tener agua disponible y de buena calidad. Representa una estrategia en el uso racional del agua según la fao.<br>
-                        · Seguro, ofrece la posibilidad de tener agua lista para beber conectando hacia el Sistema de Purificación de agua de lluvia.
-
-
-
-                    </p>
-                </div>
-                <div class="col-sm-5 center bold fs30" >
-                  
-                </div>
-            </div>
-        </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div
+      class="beneficiosbg"
+      style="
+        background-image: url(../imgs/captador/captador-pluvial-rural-beneficios.png);
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 left bold fs30 pad40">
+            Beneficios
+            <br /><br />
+            <p class="fs16 left light pmax600 gray margin0">
+              · Accesible, resuelve la necesidad de abastecimiento y
+              almacenamiento de agua potable a nivel vivienda en comunidades con
+              rezago.<br />
+              · Es una alternativa viable que provee agua para el consumo humano
+              en funciones básicas como: alimentación (preparación de alimentos
+              y agua para beber), higiene personal, limpieza y aseo de la
+              vivienda e incluso riego.<br />
+              · Sustentable, contribuye a la sostenibilidad y protección del
+              medio ambiente al aprovechar el recurso natural de agua de lluvia
+              dentro de su ciclo regular.<br />
+              · Amigable con el entorno, su diseño y tecnología facilita su
+              instalación además que permite una rápida adopción y mantenimiento
+              por parte de los beneficiarios.<br />
+              · Versátil, el Tanque de Almacenamiento cuenta con cuerpo
+              reforzado para ser instalado en cualquier tipo de suelo
+              (exterior).<br />
+              · Sostenible, sin gasto adicional por consumo de energía eléctrica
+              gracias a su Bomba de agua manual.<br />
+              · Eleva la calidad de vida de los beneficiarios al tener agua
+              disponible y de buena calidad. Representa una estrategia en el uso
+              racional del agua según la fao.<br />
+              · Seguro, ofrece la posibilidad de tener agua lista para beber
+              conectando hacia el Sistema de Purificación de agua de lluvia.
+            </p>
+          </div>
+          <div class="col-sm-5 center bold fs30"></div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
-        <div class="row">
-            
-
-            <div class="col-sm-12 center bold pad20 fs30" >
-
-                Componentes
-                
-            </div>
-        
-        </div>
+      <div class="row">
+        <div class="col-sm-12 center bold pad20 fs30">Componentes</div>
+      </div>
     </div>
-
-
-
-
-
-
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-7 left bold fs30 pad40" >
-                <p class="fs16 left light pmax600 gray margin0">
-                    1. Canaletas y bajantes.<br>
-                    2. Sistema de separación de primeras lluvias con Tanque colector (automático/manual) con Filtro de hojas.<br>
-                    3. Tanque de Almacenamiento.<br>
-                    4. Salida de excedencias y desagüe.<br>
-                    5. Pichancha flotante.<br>
-                    6. Reductor de turbulencia.<br>
-                    7. Bomba de agua manual.
-
-
-
-
-                </p>
-            </div>
-            <div class="col-sm-5 center bold fs30" >
-              <img src="../imgs/captador/componentes-captador-pluvial.png"/>
-            </div>
+      <div class="row">
+        <div class="col-sm-7 left bold fs30 pad40">
+          <p class="fs16 left light pmax600 gray margin0">
+            1. Canaletas y bajantes.<br />
+            2. Sistema de separación de primeras lluvias con Tanque colector
+            (automático/manual) con Filtro de hojas.<br />
+            3. Tanque de Almacenamiento.<br />
+            4. Salida de excedencias y desagüe.<br />
+            5. Pichancha flotante.<br />
+            6. Reductor de turbulencia.<br />
+            7. Bomba de agua manual.
+          </p>
         </div>
+        <div class="col-sm-5 center bold fs30">
+          <img src="../imgs/captador/componentes-captador-pluvial.png" />
+        </div>
+      </div>
     </div>
-
-
-
 
     <div class="container">
-        <div class="row">
-            
+      <div class="row">
+        <div class="col-sm-12 center bold pad20 fs30">
+          Capacidad del Tanque de Almacenamiento
 
-            <div class="col-sm-12 center bold pad20 fs30" >
+          <br />
+          <br />
 
-               Capacidad del Tanque de Almacenamiento
-
-               <br>
-               <br>
-
-               <table class="tabletanque fs16 light center" style="min-width:550px; margin:auto;">
-                <tbody>
-                    <tr>
-                        <td class="bold">
-                        Capacidad<br />
-                        (L)
-                        </td>
-                        <td class="bold">
-                            Di&aacute;metro<br />
-                        (m)</td>
-                        <td class="bold">
-                            Altura<br />
-                        (m)</td>
-                        <td class="bold">
-                            Registro de inspecci&oacute;n<br />
-                        (cm)</td>
-                        <td class="bold">
-                            Ubicaci&oacute;n de inspecci&oacute;n<br />
-                        (m)</td>
-                    </tr>
-                    <tr>
-                        <td>5000</td>
-                        <td>2.38</td>
-                        <td>1.36</td>
-                        <td>60</td>
-                        <td>Exc&eacute;ntrico</td>
-                    </tr>
-                    <tr>
-                        <td>10000</td>
-                        <td>2.38</td>
-                        <td>2.44</td>
-                        <td>60</td>
-                        <td>Exc&eacute;ntrico</td>
-                    </tr>
-                </tbody>
-            </table>
-                
-            </div>
-        
+          <table
+            class="tabletanque fs16 light center"
+            style="min-width: 550px; margin: auto"
+          >
+            <tbody>
+              <tr>
+                <td class="bold">
+                  Capacidad<br />
+                  (L)
+                </td>
+                <td class="bold">
+                  Di&aacute;metro<br />
+                  (m)
+                </td>
+                <td class="bold">
+                  Altura<br />
+                  (m)
+                </td>
+                <td class="bold">
+                  Registro de inspecci&oacute;n<br />
+                  (cm)
+                </td>
+                <td class="bold">
+                  Ubicaci&oacute;n de inspecci&oacute;n<br />
+                  (m)
+                </td>
+              </tr>
+              <tr>
+                <td>5000</td>
+                <td>2.38</td>
+                <td>1.36</td>
+                <td>60</td>
+                <td>Exc&eacute;ntrico</td>
+              </tr>
+              <tr>
+                <td>10000</td>
+                <td>2.38</td>
+                <td>2.44</td>
+                <td>60</td>
+                <td>Exc&eacute;ntrico</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
     </div>
 
-
-   
-
-<!--
+    <!--
 
     <div id="breakelement" style="background-image: url(../imgs/recursos-generales/mapa-fondo.jpg); display:none;" >
         <div class="container">
@@ -456,133 +397,170 @@ fetch(datacity)
     </div>
 -->
 
-
     <div id="first">
-        <div class="container fs18">
-            <div class="row">
-                <div class="col-sm-12 center bold fs30" id="breakelementblock">
-                    Productos relacionados
-                </div>
-               
-            </div>
-
-            
-            <div class="row">
-
-
-
-
-
-
-
-                <div id="gdpv" class="col-sm-4 gray center fs20" style="margin: auto; display: inline-block;">
-                    <a class="lightgray nodecoration" href="../tinaco-garantia-de-por-vida/">
-                        <img src="../imgs/recursos-generales/tinaco-producto.png" class="productitem"><br>
-                        Tinaco Garantía de por vida
-                    </a>
-                    <br><br>
-                    <a class="nodecoration ctadarkblue" href="../tinaco-garantia-de-por-vida/">Ver producto</a>
-                </div>
-
-                <div id="tp" class="col-sm-3 gray center fs20" style="margin:auto; display:none;">
-                    <a class="lightgray nodecoration" href="../tinaco-plus/">
-                        <img src="../imgs/recursos-generales/tinaco-plus-producto.png" class="productitem"><br>
-                        Tinaco Plus+
-                    </a>
-                    <br><br>
-                    <a class="nodecoration ctadarkblue" href="../tinaco-plus/">Ver producto</a>
-                </div>
-
-
-
-
-
-
-                <div class="col-sm-3 gray center fs20" style="margin:auto;">
-                    <a class="lightgray nodecoration" href="../cisterna-garantia-de-por-vida/">
-                        <img src="../imgs/recursos-generales/cisterna-producto.png" class="productitem"><br>
-                        Cisterna
-                    </a>
-                    <br><br>
-                    <a class="nodecoration ctadarkblue" href="../cisterna-garantia-de-por-vida/">Ver producto</a>
-                </div>
-
-
-                <div class="col-sm-4 gray center fs20" style="margin:auto;">
-                    <a class="lightgray nodecoration" href="../accesorios">
-                        <img src="../imgs/recursos-generales/accesorios-producto.png" class="productitem" /><br>
-                        Accesorios
-                    </a>
-                    <br><br>
-                    <a class="nodecoration ctadarkblue" href="../accesorios">Ver producto</a>
-                </div>
-            </div>
+      <div class="container fs18">
+        <div class="row">
+          <div class="col-sm-12 center bold fs30" id="breakelementblock">
+            Productos relacionados
+          </div>
         </div>
+
+        <div class="row">
+          <div
+            id="gdpv"
+            class="col-sm-4 gray center fs20"
+            style="margin: auto; display: inline-block"
+          >
+            <a
+              class="lightgray nodecoration"
+              href="../tinaco-garantia-de-por-vida/"
+            >
+              <img
+                src="../imgs/recursos-generales/tinaco-producto.png"
+                class="productitem"
+              /><br />
+              Tinaco Garantía de por vida
+            </a>
+            <br /><br />
+            <a
+              class="nodecoration ctadarkblue"
+              href="../tinaco-garantia-de-por-vida/"
+              >Ver producto</a
+            >
+          </div>
+
+          <div
+            id="tp"
+            class="col-sm-3 gray center fs20"
+            style="margin: auto; display: none"
+          >
+            <a class="lightgray nodecoration" href="../tinaco-plus/">
+              <img
+                src="../imgs/recursos-generales/tinaco-plus-producto.png"
+                class="productitem"
+              /><br />
+              Tinaco Plus+
+            </a>
+            <br /><br />
+            <a class="nodecoration ctadarkblue" href="../tinaco-plus/"
+              >Ver producto</a
+            >
+          </div>
+
+          <div class="col-sm-3 gray center fs20" style="margin: auto">
+            <a
+              class="lightgray nodecoration"
+              href="../cisterna-garantia-de-por-vida/"
+            >
+              <img
+                src="../imgs/recursos-generales/cisterna-producto.png"
+                class="productitem"
+              /><br />
+              Cisterna
+            </a>
+            <br /><br />
+            <a
+              class="nodecoration ctadarkblue"
+              href="../cisterna-garantia-de-por-vida/"
+              >Ver producto</a
+            >
+          </div>
+
+          <div class="col-sm-4 gray center fs20" style="margin: auto">
+            <a class="lightgray nodecoration" href="../accesorios">
+              <img
+                src="../imgs/recursos-generales/accesorios-producto.png"
+                class="productitem"
+              /><br />
+              Accesorios
+            </a>
+            <br /><br />
+            <a class="nodecoration ctadarkblue" href="../accesorios"
+              >Ver producto</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
 
     <div id="footer">
-        <div class="container fs18">
+      <div class="container fs18">
+        <div class="row">
+          <div class="col-sm-4 white center pad20">
+            <span class="lightblue bold"> Contáctanos </span>
+            <br /><br />
+            <p class="left">
+              <a
+                class="menuitem white nodecoration"
+                href="tel:8005063000"
+                target="_blank"
+                ><img
+                  src="../imgs/recursos-generales/telefono-icon-footer.svg"
+                />
+                800 506 3000</a
+              >
+              <br /><br />
+              <a
+                class="menuitem white nodecoration"
+                target="_blank"
+                href="https://rotoplas.com.mx/contacto/"
+                ><img src="../imgs/recursos-generales/mail-icon-footer.svg" />
+                Contacto</a
+              >
+            </p>
+          </div>
+          <div class="col-sm-4 center white pad20">
+            <span class="lightblue bold"> Síguenos </span>
+            <br /><br />
+            <a target="_blank" href="https://www.facebook.com/RotoplasMexico"
+              ><img
+                class="rrss"
+                src="../imgs/recursos-generales/facebook-icon.svg"
+            /></a>
+            <a target="_blank" href="https://www.youtube.com/user/masymejoragua"
+              ><img
+                class="rrss"
+                src="../imgs/recursos-generales/youtube-icon.svg"
+            /></a>
+            <a target="_blank" href="https://www.instagram.com/gruporotoplas/"
+              ><img
+                class="rrss"
+                src="../imgs/recursos-generales/instagram-icon.svg"
+            /></a>
+          </div>
 
-            <div class="row">
-                <div class="col-sm-4 white center pad20">
-                    <span class="lightblue bold"> Contáctanos </span>
-                    <br><br>
-                    <p class="left">
-                        <a class="menuitem white nodecoration" href="tel:8005063000" target="_blank"><img src="../imgs/recursos-generales/telefono-icon-footer.svg"/> 800 506 3000</a>
-                        <br><br>
-                        <a class="menuitem white nodecoration" target="_blank" href="https://rotoplas.com.mx/contacto/"><img src="../imgs/recursos-generales/mail-icon-footer.svg"/> Contacto</a>
-                    </p>
-                </div>
-                <div class="col-sm-4 center white pad20">
-                    <span class="lightblue bold"> Síguenos </span>
-                    <br><br>
-                    <a target="_blank" href="https://www.facebook.com/RotoplasMexico"><img class="rrss" src="../imgs/recursos-generales/facebook-icon.svg"/></a>
-                    <a target="_blank" href="https://www.youtube.com/user/masymejoragua"><img class="rrss" src="../imgs/recursos-generales/youtube-icon.svg"/></a>
-                    <a target="_blank" href="https://www.instagram.com/gruporotoplas/"><img class="rrss" src="../imgs/recursos-generales/instagram-icon.svg"/></a>
-                </div>
-
-                <div class="col-sm-4 white right">
-                    
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-sm-4 center">
-                    <a target="_blank" href="https://rotoplas.com.mx" class="white nodecoration">
-                        <img src="../imgs/recursos-generales/logo-rotoplas-footer.svg" class="logofooter">
-                    </a>
-                </div>
-                <div class="col-sm-4 center white pad40">
-                    <br><br>
-                    Copyright @ 2023. Rotoplas. S.A. de C.V
-                </div>
-
-                <div class="col-sm-4 white center pad40">
-                    <br><br>
-                    <a target="_blank" href="https://rotoplas.com.mx/aviso-de-privacidad/" class="white nodecoration">Aviso de privacidad</a>
-                </div>
-            </div>
+          <div class="col-sm-4 white right"></div>
         </div>
+
+        <div class="row">
+          <div class="col-sm-4 center">
+            <a
+              target="_blank"
+              href="https://rotoplas.com.mx"
+              class="white nodecoration"
+            >
+              <img
+                src="../imgs/recursos-generales/logo-rotoplas-footer.svg"
+                class="logofooter"
+              />
+            </a>
+          </div>
+          <div class="col-sm-4 center white pad40">
+            <br /><br />
+            Copyright @ 2023. Rotoplas. S.A. de C.V
+          </div>
+
+          <div class="col-sm-4 white center pad40">
+            <br /><br />
+            <a
+              target="_blank"
+              href="https://rotoplas.com.mx/aviso-de-privacidad/"
+              class="white nodecoration"
+              >Aviso de privacidad</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-
-
-</body>
-
+  </body>
 </html>
-
-
-
